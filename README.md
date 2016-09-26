@@ -53,12 +53,6 @@ MYSQL_PASSWORD: "",
 
 The required database tables get generated automatically.
 
-## Server setup
-
-You need at minimum [Node.js](https://nodejs.org/en/) version 6.x.
-
-Open up a terminal and enter ``npm run boot`` to start the server.
-
 ## Docker setup
 
 1. Download ``Dockerfile``, ``cfg.js.example`` and ``supervisord.conf`` from github.
