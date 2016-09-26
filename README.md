@@ -53,6 +53,9 @@ MYSQL_PASSWORD: "",
 
 The required database tables get generated automatically.
 
+## Web-Api setup
+visit https://github.com/maierfelix/POGOserver/wiki/How-to-setup-API--services-through-Google-Console
+to see how to setup google maps javascript api
 ## Docker setup
 
 1. open docker-compose file.
