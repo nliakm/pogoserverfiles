@@ -50,6 +50,8 @@ MYSQL_PASSWORD: "",
 ````
 The required database tables get generated automatically.
 
+## Web-Api setup
+
 View https://github.com/maierfelix/POGOserver/wiki/How-to-setup-API--services-through-Google-Console
 to see how to add google maps javascript api
 
