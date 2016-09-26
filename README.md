@@ -28,9 +28,6 @@
 # Getting started
 
 ## Setup
-
-Copy and rename ``cfg.js.example`` to ``cfg.js``.
-
 Open ``cfg.js`` and fill the following fields:
 
 ````js
