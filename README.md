@@ -1,3 +1,5 @@
+## credits to maierfelix: serverfiles from https://github.com/maierfelix/POGOserver (i only modified the dockerfile and created the docker-compose and .bat files)
+
 ````
                               ______ _____ _____ _____                               
                               | ___ \  _  |  __ \  _  |                              
@@ -26,9 +28,6 @@
 # Getting started
 
 ## Setup
-
-Copy and rename ``cfg.js.example`` to ``cfg.js``.
-
 Open ``cfg.js`` and fill the following fields:
 
 ````js
@@ -53,12 +52,6 @@ MYSQL_PASSWORD: "",
 ````
 
 The required database tables get generated automatically.
-
-## Server setup
-
-You need at minimum [Node.js](https://nodejs.org/en/) version 6.x.
-
-Open up a terminal and enter ``npm run boot`` to start the server.
 
 ## Docker setup
 
