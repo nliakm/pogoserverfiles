@@ -1,3 +1,5 @@
+## credits to maierfelix: serverfiles from https://github.com/maierfelix/POGOserver (i only modified the dockerfiles and created the docker-compose and .bat files
+
 ````
                               ______ _____ _____ _____                               
                               | ___ \  _  |  __ \  _  |                              
