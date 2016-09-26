@@ -62,12 +62,11 @@ Open up a terminal and enter ``npm run boot`` to start the server.
 
 ## Docker setup
 
-1. Download ``Dockerfile``, ``cfg.js.example`` and ``supervisord.conf`` from github.
-2. Place ``Dockerfile``, ``cfg.js.example`` and ``supervisord.conf`` into the same folder. Rename ``cfg.js.example`` to ``cfg.js``.
-3. Modify ``cfg.js`` to your requirements as described above.
-4. Create a container and run it.
-5. Open a bash prompt, enter: ``cd /POGOserver/`` and ``./run-linux.sh``.
-6. Connect the Pokemon Go app to the server.
-7. Done.
+1. open docker-compose file.
+2. edit the "volumes" - paths
+3. edit the "build" - path to where the dockerfile is located
+4. save the changes.
+5. run the install.bat
+6. Done.
 
 Note: Instead of automatically mapping the ports, map them static, so they don't change after reboot.
