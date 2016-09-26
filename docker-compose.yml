@@ -1,0 +1,62 @@
+##
+# Configuration MYSQL
+##
+db:
+ container_name: db
+ image: mysql:latest
+ volumes:
+  - C:\Users\Username\docker\mysql\:/var/lib/mysql/
+ environment:
+  - MYSQL_ROOT_PASSWORD=123456
+  - MYSQL_DATABASE=pogosql
+#  - MYSQL_TCP_PORT: 3306
+ ports:
+  - "3306:3306"
+
+##
+# Configuration phpmyadmin
+##
+php:
+ container_name: php
+ image: phpmyadmin/phpmyadmin
+ environment:
+  - MYSQL_ROOT_PASSWORD=123456
+  - MYSQL_DATABASE=pogosql
+  - PMA_HOST=172.17.0.2
+ ports:
+  - "8080:80"
+ links:
+  - db:db
+
+##
+# Configuration Apache
+##
+web:
+ container_name: web
+ image: nimmis/alpine-apache
+ ports:
+  - "80:80"
+  - "443:443"
+  - "3333:3333"
+ volumes:
+  - C:\Users\Username\docker\api\:/web/html/api/
+ links:
+  - db:db
+
+##
+# Configuration POGOServer
+##
+pogoserver:
+ container_name: ps
+ build: C:\Users\Username\docker\pogoserver\
+# image: pogoserver
+ ports:
+  - "3000:3000"
+ volumes:
+#  - /home/pogoserver/:/POGOserver/
+   - C:\Users\Username\docker\pogoserver\data\:/POGOserver/data/
+ links :
+  - db:db
+  - web:web
+ expose :
+  - "3000"
